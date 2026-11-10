@@ -20,19 +20,7 @@ services:
       CHOKIDAR_USEPOLLING: "true"
     depends_on:
       - db
-    develop:
-      watch:
-        - action: rebuild
-          path: ./package.json
-        - action: rebuild
-          path: ./package-lock.json
-        - action: rebuild
-          path: ./vite.config.ts
-        - action: rebuild
-          path: ./server.js
-        - action: rebuild
-          path: ./Dockerfile
-
+    
   db:
     container_name: mongo_db
     image: mongo:latest
