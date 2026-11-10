@@ -1,18 +1,18 @@
 import adapter from '@sveltejs/adapter-node';
-import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
+import {sveltekit} from '@sveltejs/kit/vite';
+import {defineConfig} from 'vite';
 
 export default defineConfig({
-	plugins: [
-		sveltekit({
-			adapter: adapter()
-		})
-	],
-	server: {
-		watch: {
-			usePolling: true,
-			interval: 1000
-		},
-		host: true
-	}
+    plugins: [
+        sveltekit({
+            adapter: adapter()
+        })
+    ],
+    server: {
+        watch: {
+            usePolling: true,
+            interval: 1000
+        },
+        host: true
+    }
 });
