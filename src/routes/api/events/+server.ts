@@ -1,7 +1,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
-import {createOstEvent, getAllOstEvents, getUserByUsername} from "$lib/database.server";
+import {createOstEvent, getAllOstEvents, getUserByUsername} from "#lib/database.server";
 import {json} from "@sveltejs/kit";
-import { readJWT } from '$lib/auth.server';
+import { readJWT } from '#lib/auth.server';
 
 export async function GET() {
     const ostEvents: OstEvent[] = await getAllOstEvents()

@@ -20,7 +20,7 @@
 
 <script lang="ts">
 
-    import {formatDateToString} from "$lib/util.js";
+    import {formatDateToString} from "#lib/util";
     import {invalidateAll} from "$app/navigation";
 
     export let ostEvent: OstEvent

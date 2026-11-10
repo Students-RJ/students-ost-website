@@ -12,7 +12,7 @@
 
 <script lang="ts">
 
-    import {formatDateToString} from "$lib/util";
+    import {formatDateToString} from "#lib/util";
 
     export let ostEvent: OstEvent
 

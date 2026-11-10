@@ -1,10 +1,10 @@
 import * as mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
 import dotenv from 'dotenv'
-import {User} from '$lib/models/User.js'
-import {OstEvent} from "$lib/models/OstEvent";
-import {Organisation} from "$lib/models/Organisation";
-import {building} from '$app/environment'
+import {User} from '#lib/models/User'
+import {OstEvent} from "#lib/models/OstEvent";
+import {Organisation} from "#lib/models/Organisation";
+import {building} from '$app/env'
 
 dotenv.config()
 

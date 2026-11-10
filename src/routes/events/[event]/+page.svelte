@@ -4,7 +4,7 @@
 
 <script>
 
-    import OstEvent from '$lib/components/event/OstEvent.svelte'
+    import OstEvent from '#lib/components/event/OstEvent.svelte'
 
     export let data
 

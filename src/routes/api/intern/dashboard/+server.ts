@@ -1,7 +1,7 @@
 import type {RequestHandler} from "@sveltejs/kit";
 import {json} from "@sveltejs/kit";
-import {readJWT} from "$lib/auth.server";
-import {getOstEvent, getOstEventsByOrganiser, getUserByUsername, getOrganisation} from "$lib/database.server";
+import {readJWT} from "#lib/auth.server";
+import {getOstEvent, getOstEventsByOrganiser, getUserByUsername, getOrganisation} from "#lib/database.server";
 
 export const GET: RequestHandler = ( async ({cookies}) => {
     const jwtCookie = cookies.get('jwt')

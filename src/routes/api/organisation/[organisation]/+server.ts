@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import { getOrganisation } from '$lib/database.server.js'
+import { getOrganisation } from '#lib/database.server'
 
 export async function GET({ params }: any): Promise<Response> {
     const organisations = await getOrganisation(params.organisation)

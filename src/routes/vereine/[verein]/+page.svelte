@@ -36,9 +36,9 @@
 
 
 <script lang="ts">
-    import MainButton from '$lib/components/MainButton.svelte'
-    import NavBar from "$lib/components/NavBar.svelte";
-    import Footer from "$lib/components/Footer.svelte";
+    import MainButton from '#lib/components/MainButton.svelte'
+    import NavBar from "#lib/components/NavBar.svelte";
+    import Footer from "#lib/components/Footer.svelte";
 
     export let data
     const verein: Organisation = data.verein

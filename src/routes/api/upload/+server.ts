@@ -1,7 +1,7 @@
 import crypto from "crypto";
 import {fail, json, type RequestHandler} from '@sveltejs/kit'
 import fs from 'fs/promises'
-import {readJWT} from '$lib/auth.server.js'
+import {readJWT} from '#lib/auth.server'
 
 export const POST: RequestHandler = async ({request, cookies}): Promise<Response> => {
 

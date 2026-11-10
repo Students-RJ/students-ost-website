@@ -25,7 +25,7 @@
 
 <script lang="ts">
 
-    import DashboardButton from "$lib/components/dashboard/DashboardButton.svelte";
+    import DashboardButton from "#lib/components/dashboard/DashboardButton.svelte";
 
     export let data
     $: hasVerein = !!data.organisation

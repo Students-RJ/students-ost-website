@@ -1,5 +1,5 @@
 import {json, type RequestHandler} from "@sveltejs/kit";
-import {getAllUsers} from "$lib/database.server";
+import {getAllUsers} from "#lib/database.server";
 import {Schema} from "mongoose";
 
 export const GET: RequestHandler = ( async ({cookies}) => {
