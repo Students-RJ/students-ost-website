@@ -1,6 +1,6 @@
 import type {ActionFailure, Actions} from "@sveltejs/kit";
 import {fail, redirect} from "@sveltejs/kit";
-import {authenticateUserWithPassword, createJWT} from "$lib/auth.server";
+import {authenticateUserWithPassword, createJWT} from "#lib/auth.server";
 
 export const actions: Actions = {
     default: async (event): Promise<loginActionStatus | ActionFailure<{error: string}>> => {

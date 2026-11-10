@@ -3,7 +3,7 @@
 
 <script lang="ts">
 
-    import OstEventForm from "$lib/components/dashboard/OstEventForm.svelte";
+    import OstEventForm from "#lib/components/dashboard/OstEventForm.svelte";
 
     export let data
 

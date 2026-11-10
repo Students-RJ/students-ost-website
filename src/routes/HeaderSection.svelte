@@ -27,7 +27,7 @@
 
 <script lang="ts">
 
-    import {formatDateToString} from "$lib/util.js";
+    import {formatDateToString} from "#lib/util";
 
     export let ostEvents: OstEvent[]
 

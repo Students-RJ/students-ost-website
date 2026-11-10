@@ -40,12 +40,12 @@
 
 <script lang="ts">
 
-    import NavBar from "$lib/components/NavBar.svelte";
-    import Footer from "$lib/components/Footer.svelte";
-    import OstEventInfoWidget from "$lib/components/event/OstEventInfoWidget.svelte";
-    import {formatDateToString} from "$lib/util.js";
-    import MainButton from "$lib/components/MainButton.svelte";
-    import {generateICS} from "$lib/icsGenerator";
+    import NavBar from "#lib/components/NavBar.svelte";
+    import Footer from "#lib/components/Footer.svelte";
+    import OstEventInfoWidget from "#lib/components/event/OstEventInfoWidget.svelte";
+    import {formatDateToString} from "#lib/util";
+    import MainButton from "#lib/components/MainButton.svelte";
+    import {generateICS} from "#lib/icsGenerator";
     import {onMount} from "svelte";
 
     export let ostEvent: OstEvent

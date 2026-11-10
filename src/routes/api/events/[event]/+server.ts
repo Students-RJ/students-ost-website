@@ -1,7 +1,7 @@
 import {fail, type RequestHandler} from '@sveltejs/kit'
-import {deleteOstEvent, getOstEvent, getUserByUsername, insertOrUpdateOstEvent} from "$lib/database.server";
+import {deleteOstEvent, getOstEvent, getUserByUsername, insertOrUpdateOstEvent} from "#lib/database.server";
 import {json} from "@sveltejs/kit";
-import {readJWT} from "$lib/auth.server";
+import {readJWT} from "#lib/auth.server";
 import fs from 'fs/promises'
 
 export async function GET({ params }: any): Promise<Response> {

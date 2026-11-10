@@ -6,7 +6,7 @@
 
         <div class="header">
             {#if verein.logo}
-                <img class="logo" src="/public/uploads/logos/1b52d7f0-b79a-4136-8abe-336e282dceed.png" alt="Vereins Logo">
+                <img class="logo" src="{verein.logo}" alt="Vereins Logo">
             {/if}
 
             <h1 class="page-title">{verein.name}</h1>
@@ -36,9 +36,9 @@
 
 
 <script lang="ts">
-    import MainButton from '$lib/components/MainButton.svelte'
-    import NavBar from "$lib/components/NavBar.svelte";
-    import Footer from "$lib/components/Footer.svelte";
+    import MainButton from '#lib/components/MainButton.svelte'
+    import NavBar from "#lib/components/NavBar.svelte";
+    import Footer from "#lib/components/Footer.svelte";
 
     export let data
     const verein: Organisation = data.verein

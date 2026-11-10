@@ -19,8 +19,8 @@
 
 <script lang="ts">
 
-    import DashboardButton from "$lib/components/dashboard/DashboardButton.svelte";
-    import DashboardEventThumbnail from "$lib/components/dashboard/DashboardEventThumbnail.svelte";
+    import DashboardButton from "#lib/components/dashboard/DashboardButton.svelte";
+    import DashboardEventThumbnail from "#lib/components/dashboard/DashboardEventThumbnail.svelte";
 
     export let data
 

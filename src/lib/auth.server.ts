@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
-import {getUserByUsername} from '$lib/database.server.js'
+import {getUserByUsername} from '#lib/database.server'
 
 const JWT_EXPIRES_IN: number = parseInt(process.env.AUTH_MAX_AGE || '') || 60 * 60 * 24  // in seconds
 const JWT_SECRET: string = process.env.JWT_SECRET as string

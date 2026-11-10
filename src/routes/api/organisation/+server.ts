@@ -5,9 +5,9 @@ import {
     getOstEvent,
     getUserByUsername,
     updateOrganisation
-} from '$lib/database.server.js'
-import {readJWT} from "$lib/auth.server";
-import {saveImageToDisk} from "$lib/util.server";
+} from '#lib/database.server'
+import {readJWT} from "#lib/auth.server";
+import {saveImageToDisk} from "#lib/util.server";
 
 export async function GET({url}: any) {
     const type = url.searchParams.get('type')

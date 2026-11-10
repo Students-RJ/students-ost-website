@@ -7,7 +7,7 @@
         {#if showNameError}<p class="error-msg">Titel muss mindestens 3 Buchstaben lang sein</p>{/if}
 
         <label for="datum">Datum:</label>
-        <input type="date" id="datum" value="{formatDateForInput(newOstEvent.date)}" on:change={ (e) => newOstEvent.date = new Date(e.target.value)}>
+        <input type="date" id="datum" value="{formatDateForInput(newOstEvent.date)}" on:change={ (e) => newOstEvent.date = new Date(e.currentTarget.value)}>
 
         <div class="form-row">
             <div>
